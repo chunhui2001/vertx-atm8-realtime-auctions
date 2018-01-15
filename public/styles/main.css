@@ -1,0 +1,210 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #303030;
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-size: 18px;
+}
+h3 {
+  font-size: 14px;
+  margin: 15px 0 5px;
+}
+a {
+  color: #0083ff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.button {
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #D6D6D6;
+  background-color: #3c3c3c;
+  box-shadow: inset 0 1px 0 0 #7d7d7d;
+  text-shadow: 1px 1px 0 #000;
+  background: -moz-linear-gradient(top, #7d7d7d 5%, #3c3c3c 100%);
+  background: -webkit-linear-gradient(top, #7d7d7d 5%, #3c3c3c 100%);
+  background: -o-linear-gradient(top, #7d7d7d 5%, #3c3c3c 100%);
+  background: -ms-linear-gradient(top, #7d7d7d 5%, #3c3c3c 100%);
+  background: linear-gradient(top, #7d7d7d 5%, #3c3c3c 100%);
+  padding: 11px 50px;
+  border-radius: 5px;
+}
+.button:hover {
+  text-decoration: none;
+}
+.container {
+  width: 370px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.container .timer {
+  text-align: right;
+  color: #FF8002;
+  font-size: 35px;
+  margin: 20px 0;
+  display: block;
+}
+.container .offer {
+  border: 1px solid #D6D6D6;
+  border-radius: 5px;
+  display: table;
+  width: 100%;
+}
+.container .offer .photo {
+  display: table-cell;
+  padding: 5px 10px;
+}
+.container .offer .photo img {
+  margin: 0;
+  padding: 0;
+}
+.container .offer .info {
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle;
+  padding: 5px 10px;
+}
+.container .offer .info span {
+  display: block;
+}
+.container .offer .info span.price-label {
+  color: #FF8002;
+  font-weight: bold;
+}
+.container .offer .info span.current-price {
+  font-size: 20px;
+  margin: 5px 0 10px 0;
+}
+.container .offer .info span.delivery {
+  color: #11BB00;
+}
+.container .offer-info {
+  margin: 20px 0;
+}
+.container .offer-info strong {
+  display: block;
+  margin-bottom: 5px;
+}
+.container .bid {
+  text-align: center;
+  padding: 10px 0;
+}
+.login label {
+  display: block;
+  margin: 20px 0 5px;
+  font-weight: bold;
+}
+.login div {
+  width: 80%;
+  margin: 0 auto;
+}
+.login div input:not([type='submit']) {
+  background: #eee;
+  border: 1px solid #D6D6D6;
+  border-radius: 5px;
+  padding: 10px;
+  width: 80%;
+}
+.login div input[type='submit'] {
+  margin-top: 20px;
+}
+.message {
+  margin: 0 auto;
+  padding: 15px 0;
+  text-align: center;
+  color: #fff;
+  width: 400px;
+}
+.message.error {
+  background: #d9534f;
+}
+.message.success {
+  background: #5cb85c;
+}
+.message.info {
+  background: #5bc0de;
+}
+form.bid label {
+  color: #FF8002;
+  display: block;
+  font-weight: bold;
+  margin: 10px 0 0;
+}
+form.bid input[type='number'] {
+  border: 1px solid #D6D6D6;
+  border-radius: 5px;
+  padding: 10px;
+  width: 40%;
+  text-align: center;
+  font-size: 14px;
+  margin-right: 5px;
+}
+form.bid p {
+  color: #999999;
+  font-size: 11px;
+}
+form.bid .button {
+  width: 100%;
+  border: 1px solid #ff7b1e;
+  height: auto;
+  text-shadow: 1px 1px 0 #ff3b10;
+  box-shadow: inset 0 1px 0 0 #ff9502;
+  background-color: #ff7300;
+  background-image: -moz-linear-gradient(top, #ff9502 5%, #ff6600 100%);
+  background-image: -webkit-linear-gradient(top, #ff9502 5%, #ff6600 100%);
+  background-image: -o-linear-gradient(top, #ff9502 5%, #ff6600 100%);
+  background-image: -ms-linear-gradient(top, #ff9502 5%, #ff6600 100%);
+  background-image: linear-gradient(top, #ff9502 5%, #ff6600 100%);
+  background-repeat: repeat-x;
+}
+form.bid .button:disabled {
+  border: 1px solid #D6D6D6;
+  background-color: #3c3c3c;
+  box-shadow: inset 0 1px 0 0 #7d7d7d;
+  text-shadow: 1px 1px 0 #000;
+  background: -moz-linear-gradient(top, #7d7d7d 5%, #3c3c3c 100%);
+  background: -webkit-linear-gradient(top, #7d7d7d 5%, #3c3c3c 100%);
+  background: -o-linear-gradient(top, #7d7d7d 5%, #3c3c3c 100%);
+  background: -ms-linear-gradient(top, #7d7d7d 5%, #3c3c3c 100%);
+  background: linear-gradient(top, #7d7d7d 5%, #3c3c3c 100%);
+}
+form.bid .change-price {
+  cursor: pointer;
+  background: #fff;
+  border: 3px solid #0083ff;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: inline-block;
+  margin: 0 10px;
+  color: #0083ff;
+  font-size: 30px;
+}
+form.bid .change-price:disabled {
+  border: 3px solid #999999;
+  color: #999999;
+}
+table.feed {
+  border: 1px solid #D6D6D6;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+table.feed th {
+  background: #eee;
+  padding: 5px;
+}
+table.feed tr td {
+  padding: 2px;
+}
+table.feed tr td:nth-of-type(1) {
+  padding-left: 10px;
+}
+table.feed tr td:nth-of-type(2) {
+  text-align: center;
+}
